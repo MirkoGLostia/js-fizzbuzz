@@ -13,22 +13,37 @@ for (let i = 1; i <= 100; i++) {
 
     const quadrato = document.createElement ('span')
     
+    // ciclo sequenza numerica
     let number = i;
 
     if (i%3==0 && i%5==0) {
         //stampa fizzbuzz
         number = "fizzbuzz";
+
+        // background
+        quadrato.style.background = '#f0466f';
+
     } 
     else if (i%3==0) {
         // stampa fizz
         number = "fizz";
+
+        // background
+        quadrato.style.background = '#0cd6a1';
+
     }
     else if (i%5==0) {
         // stampa buzz
         number = "buzz";
+
+        // background
+        quadrato.style.background = '#ffd166';
+
     }
 
     quadrato.append(number);
+
+    quadrato.classList.add("square");
 
     contenitore.append(quadrato);
 
