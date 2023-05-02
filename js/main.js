@@ -5,7 +5,13 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 */
 
 
+const container = document.getElementById ("container");
+
 for (let i = 1; i <= 100; i++) {
+
+    // creazione nuovo elemento
+
+    const quadrato = document.createElement ('span')
     
     let number = i;
 
@@ -22,6 +28,10 @@ for (let i = 1; i <= 100; i++) {
         number = "buzz";
     }
 
-    console.log(number);
+    quadrato.append(number);
+
+    contenitore.append(quadrato);
+
+    // console.log(number);
 
 }
