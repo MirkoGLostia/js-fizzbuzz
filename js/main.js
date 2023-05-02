@@ -4,18 +4,22 @@ ma che per i multipli di 3 stampi “Fizz” al posto del numero e per i multipl
 Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”. 
 */
 
-
+// costante del container
 const container = document.getElementById ("container");
 
+
+// ciclo per creare numeri e elementi html in cui inserirli
 for (let i = 1; i <= 100; i++) {
 
-    // creazione nuovo elemento
 
+    // creazione nuovo elemento
     const quadrato = document.createElement ('span')
     
+
     // ciclo sequenza numerica
     let number = i;
 
+    
     if (i%3==0 && i%5==0) {
         //stampa fizzbuzz
         number = "fizzbuzz";
@@ -41,12 +45,19 @@ for (let i = 1; i <= 100; i++) {
 
     }
 
+
+    // aggiunta valore ad elemento html
     quadrato.append(number);
 
+
+    // aggiunta classe per controllo css
     quadrato.classList.add("square");
 
+
+    //aggiunta nuovo elemento al contenitore
     contenitore.append(quadrato);
 
-    // console.log(number);
 
 }
+
+
